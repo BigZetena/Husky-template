@@ -1,11 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
-
+  const andrew = 'sdsd';
+  const KEY = import.meta.env.VITE_API_URL;
+  const API_KEY = import.meta.env.VITE_API_KEY;
   return (
     <>
       <div>
@@ -22,7 +24,8 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Edit <code>src/App.jsx</code> {KEY + API_KEY + andrew} and save to
+          test HMR
         </p>
       </div>
       <p className="read-the-docs">
